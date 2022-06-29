@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  max-width: 62rem;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.container-fluid {
+  display: grid;
+  grid-template-areas:
+    "first first "
+    "second third";
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.first {
+  grid-area: first;
+  background-color: #fff;
+  padding: 30px 60px 10px 40px;
+  border-radius: 8px 8px 0 0;
+}
+.first h1 {
+  padding: 20px 0 10px;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+  font-size: 1.5rem;
+}
+.first h3 {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.15rem;
+  font-family: 700;
+  padding-bottom: 5px;
+}
+.first p {
+  font-weight: 400;
+  color: #b2b6c2;
+}
+.first-span {
+  display: block;
+  font-size: 16px;
+}
+.second {
+  grid-area: second;
+  background-color: hsl(179, 62%, 43%);
+  padding: 40px;
+  border-radius: 0 0 0 8px;
+}
+.second h1 {
+  font-weight: 700;
+  color: #e6ffff;
+  font-size: 1rem;
+}
+.second h3 {
+  font-size: 1.8rem;
+  padding-bottom: 0;
+  font-weight: 700;
+  color: #fff;
+}
+
+.second p {
+  padding-top: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #d6fcff;
+}
+
+.second-span {
+  font-size: 1rem;
+  color: #d6fcff;
+  color: #6ee2e0;
+  font-size: 0.8rem;
+}
+button {
+  text-align: center;
+  padding: 8px 80px;
+  font-size: 0.9rem;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.third {
+  grid-area: third;
+  background-color: #4abebd;
+  border-radius: 0 0 8px 0;
+  padding: 40px 80px 0 40px;
+}
+.third h1 {
+  font-weight: 700;
+  color: #e6ffff;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+ul {
+  font-family: "Karla", sans-serif;
+  list-style-type: none;
+  font-size: 0.8rem;
+  color: #d6fcff;
+  font-weight: 400;
+}
+
+@media (max-width: 576px) {
+  .container-fluid {
+    display: grid;
+    grid-template-areas:
+      "first "
+      "second "
+      "third";
+    height: 100%;
+    margin: 50px auto;
+    width: 90%;
+  }
+  .first {
+    padding: 20px;
+  }
+  .first h1 {
+    padding: 10px 0 10px;
+  }
+  .first p {
+    font-size: 0.9rem;
+  }
+  .first-span {
+    display: inline;
+    font-size: 0.9rem;
+  }
+  .second {
+    padding: 25px;
+    border-radius: 0 0 0 0;
+  }
+  .third {
+    padding: 25px 25px 5px;
+    border-radius: 0 0 8px 8px;
+  }
+  button {
+    text-align: center;
+    padding: 8px 95px;
+    background-color: hsl(71, 73%, 54%);
+  }
+}
